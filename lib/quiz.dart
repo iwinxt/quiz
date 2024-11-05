@@ -9,8 +9,19 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Quiz de Conhecimentos Gerais',
-      
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(
+          color: Colors.blueAccent,
+          titleTextStyle: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+      ),
       home: Quiz(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -28,7 +39,7 @@ class _TelaDoQuiz extends State<Quiz> {
     {
       'question': 'Qual é a capital do Brasil?',
       'options': ['Rio de Janeiro', 'Brasília', 'São Paulo', 'Salvador'],
-      'perguntaCorret': 'Brasília',
+      'perguntaCorreta': 'Brasília',
     },
     {
       'question': 'Qual é a maior floresta tropical do mundo?',
@@ -38,58 +49,58 @@ class _TelaDoQuiz extends State<Quiz> {
         'Floresta de Bialowieza',
         'Floresta Boreal'
       ],
-      'perguntaCorret': 'Floresta Amazônica',
+      'perguntaCorreta': 'Floresta Amazônica',
     },
     {
       'question': 'Qual é o planeta mais próximo do Sol?',
       'options': ['Terra', 'Vênus', 'Marte', 'Mercúrio'],
-      'perguntaCorret': 'Mercúrio',
+      'perguntaCorreta': 'Mercúrio',
     },
     {
       'question': 'Em que ano o homem pisou na Lua pela primeira vez?',
       'options': ['1959', '1969', '1979', '1989'],
-      'perguntaCorret': '1969',
+      'perguntaCorreta': '1969',
     },
     {
       'question': 'Qual a composição da água?',
       'options': ['Composto BioOrganico', 'H2o', 'Composto Inorgânico', 'Composto Organico'],
-      'perguntaCorret': 'Composto Inorgânico',
+      'perguntaCorreta': 'Composto Inorgânico',
     },
     {
       'question': 'Quantos ossos tem no corpo humano?',
       'options': ['206', '200', '190', '220'],
-      'perguntaCorret': '206',
+      'perguntaCorreta': '206',
     },
     {
       'question': 'Onde os animes foram criados?',
       'options': ['Brasil', 'Coreia', 'China', 'Japão'],
-      'perguntaCorret': 'Japão',
+      'perguntaCorreta': 'Japão',
     },
     {
       'question': 'Qual a idade aproximada do planeta terra?',
       'options': ['5 Bilhões de anos', '4,5 Bilhões de anos', '4 Bilhões de anos', '3,5 Bilhões de anos'],
-      'perguntaCorret': '4,5 Bilhões de anos',
+      'perguntaCorreta': '4,5 Bilhões de anos',
     },
     {
       'question': 'Quem foi o primeiro humano a pisar na lua?',
       'options': ['Donald Alden Armstrong', 'Neil Alden Armstrong', 'Neil Alden ArmWeak', 'Joey Armstrong'],
-      'perguntaCorret': 'Neil Alden Armstrong',
+      'perguntaCorreta': 'Neil Alden Armstrong',
     },
     {
       'question': 'Quanto e 1 com 1?',
       'options': ['11', '1', '2', '10'],
-      'perguntaCorret': '11',
+      'perguntaCorreta': '11',
     },
     {
       'question': '1+1 = 2?',
       'options': ['Verdadeiro', 'Falso'],
-      'perguntaCorret': 'Verdadeiro',
+      'perguntaCorreta': 'Verdadeiro',
     },
     
   ];
 
   void verificarPerguntas(String respostaSelecionada) {
-    if (respostaSelecionada == perguntas[perguntaAtual]['perguntaCorret']) {
+    if (respostaSelecionada == perguntas[perguntaAtual]['perguntaCorreta']) {
       perguntaCorreta++;
     }
 
