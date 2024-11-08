@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'tela_inicial.dart';
+import 'tela_quiz.dart';
 
 void main() => runApp( MeuApp());
 
@@ -23,7 +24,7 @@ class MeuApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
         home: TelaInicial(),
-      );
+    );
   }
 }
 
