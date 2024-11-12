@@ -6,7 +6,7 @@ class TelaInicial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz de Conhecimentos Gerais'),
+        title: Text('Quiz Futebolístico'),
       ),
       body: Center(  
         child: Padding(
@@ -14,8 +14,9 @@ class TelaInicial extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-             Image.asset('lib/Assets/telainicial.png'),
-              SizedBox(height: 20),
+            SizedBox(child: Image.asset('lib/Assets/tela.jpg',width: 650, height: 350,),
+            ),
+            SizedBox(height: 20),
               Text(
                 'Bem-vindo ao Quiz!',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),

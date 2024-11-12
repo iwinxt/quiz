@@ -17,19 +17,26 @@ class TelaResultado extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,    
-            children: <Widget>[
-             Image.asset('lib/Assets/telafinal.jpg'),
-              SizedBox(height: 20),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[    
+            SizedBox(width: 450, height: 250,
+              child: Image.asset(
+                'lib/Assets/finalquiz2.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
+            SizedBox(height: 20),
                Text(
                     'Fim do quiz! Você acertou $pontos de $totalPerguntas questões.',
-                    style: TextStyle(fontSize: 24),
+                    style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold), 
                   ),
               TextButton(
                 onPressed: (){
                     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>TelaInicial()));
                 },
-                child: Text('Recomeçar'),
+                child: Text(
+                            'Recomeçar',
+                            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold), ),
                    ),
             ],
           ),

@@ -63,6 +63,22 @@ flutter:
     - lib/Assets/telainicial.png
     - lib/Assets/telaquiz.jpg
     - lib/Assets/telafinal.jpg
+    - lib/Assets/telafutebol.png
+    - lib/Assets/futebolquiz2.jpg
+    - lib/Assets/fifaquiz.webp
+    - lib/Assets/finalquiz2.jpg
+    - lib/Assets/copa.jpg
+    - lib/Assets/quizultimo.jpg
+    - lib/Assets/tela.jpg
+    - lib/Assets/neymarquiz.jpg
+    - lib/Assets/mundialquiz.jpg
+    - lib/Assets/messiquiz.jpg
+    - lib/Assets/artilheiro.jpg
+    - lib/Assets/bolaquiz.webp
+    - lib/Assets/brasileiraoquiz.webp
+    - lib/Assets/campoquiz.webp
+    - lib/Assets/championsquiz.webp
+    - lib/Assets/bolaquiz.webp
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
