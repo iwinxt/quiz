@@ -158,6 +158,10 @@ Widget build(BuildContext context) {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Text(
+            'Pergunta ${perguntaAtual + 1} de ${perguntas.length}',
+              style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+              ),
           Image.asset(
                   perguntas[perguntaAtual]['image'] as String, 
                   width: 250,
@@ -178,6 +182,7 @@ Widget build(BuildContext context) {
               ),
               child: Text(option['text'] as String, style: TextStyle(fontSize: 20)
                 ),
+                
               );
             },
             ).toList(),
